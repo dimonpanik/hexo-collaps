@@ -1,6 +1,6 @@
 {
   "name": "hexo-collaps",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Grab video in Collaps CDN",
   "main": "index.js",
   "keywords": [

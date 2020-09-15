@@ -115,7 +115,7 @@ function parse(type, path, _path) {
                         }
                         fs.appendFileSync(file, data)
                         fs.appendFileSync(file, "\n---\n")
-                        if (hexo.config.collaps.posters_local == true) {
+                        if (hexo.config.collaps.poster_local == true) {
                             request(item['poster']).pipe(fs.createWriteStream('source/images/' + item['id'] + '.png'))
                         }
 

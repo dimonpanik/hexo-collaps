@@ -1,0 +1,17 @@
+{
+  "name": "hexo-collaps",
+  "version": "0.0.1",
+  "description": "Grab video in Collaps CDN",
+  "main": "index.js",
+  "keywords": [
+    "hexo",
+    "hexo plugin",
+    "hexo collaps",
+    "movies films"
+  ],
+  "author": "dimonpanik",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

@@ -36,5 +36,5 @@ Other type on hexo help hexo-collaps
 ```
 
 ## License
-Copyright (c) 2016, HyunSeob. Licensed under the [MIT license](https://github.com/HyunSeob/hexo-auto-canonical/blob/master/LICENSE).
+Copyright (c) 2016, dimonpanik. Licensed under the [MIT license](https://github.com/dimonpanik/hexo-collaps/blob/master/LICENSE).
 

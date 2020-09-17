@@ -1,7 +1,10 @@
 const fs = require('hexo-fs');
 const request = require('request');
 const util = require('hexo-util');
+<<<<<<< HEAD
 const fetch = require('node-fetch');
+=======
+>>>>>>> 0aa0cd76c8b753c3157a57e600b998c98d894085
 
 
 
@@ -20,6 +23,10 @@ const ru_path = {
 hexo.config.collaps = Object.assign({
     api_key: hexo.config.collaps.api_key,
     slug_pinycode: hexo.config.collaps.slug_pinycode || true,
+<<<<<<< HEAD
+=======
+    collections: hexo.config.collaps.collections || true,
+>>>>>>> 0aa0cd76c8b753c3157a57e600b998c98d894085
     posters_local: hexo.config.collaps.posters_local || true
 }, hexo.config.collaps);
 
@@ -58,12 +65,21 @@ hexo.extend.console.register("collaps", "Collaps movie parser", collaps_options,
 
 function parse(type, path, _path) {
     console.log("Starting parse " + type + " into folder  " + path)
+<<<<<<< HEAD
     fetch(api_url + type).then(response => response.text()).then(body =>{
+=======
+
+    request(api_url + type, function (error, response, body) {
+>>>>>>> 0aa0cd76c8b753c3157a57e600b998c98d894085
         var full = JSON.parse(body)
         var pages = full['total'] / 100 + 1
         console.log("Found " + full['total'] + " entries")
         for (let page = 1; page < pages; page++) {
+<<<<<<< HEAD
             fetch(api_url + type + "&limit=100&page=" + page).then(response => response.text()).then(body =>{
+=======
+            request(api_url + type + "&limit=100&page=" + page, function (error, response, body) {
+>>>>>>> 0aa0cd76c8b753c3157a57e600b998c98d894085
                 var list = JSON.parse(body)
                 if (Object.keys(list['results']).length !== 0) {
                     list['results'].forEach(item => {
@@ -115,6 +131,7 @@ function parse(type, path, _path) {
                         fs.appendFileSync(file, data)
                         fs.appendFileSync(file, "\n---\n")
                         if (hexo.config.collaps.poster_local == true) {
+<<<<<<< HEAD
                             if (!fs.existsSync("source/images")) {
                                 fs.mkdirSync("source/images")
                             }
@@ -124,6 +141,9 @@ function parse(type, path, _path) {
                                 const dest = fs.createWriteStream('source/images/' + item['id'] + '.jpg');
                                 res.body.pipe(dest);
                             });
+=======
+                            request(item['poster']).pipe(fs.createWriteStream('source/images/' + item['id'] + '.png'))
+>>>>>>> 0aa0cd76c8b753c3157a57e600b998c98d894085
                         }
 
                     });
@@ -132,8 +152,17 @@ function parse(type, path, _path) {
             })
         }
 
+<<<<<<< HEAD
     });
 
 }
 
 
+=======
+
+
+
+
+    });
+}
+>>>>>>> 0aa0cd76c8b753c3157a57e600b998c98d894085

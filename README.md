@@ -23,8 +23,7 @@ collaps:
 
 # slug_pinycode
 Translate path to pinycode \\ for русский пользователей
-# collections
-In progress
+
 # poster_local
 Download posters to local
 

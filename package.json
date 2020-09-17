@@ -1,0 +1,46 @@
+{
+  "_from": "hexo-collaps@0.0.4",
+  "_id": "hexo-collaps@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-+r7MiUn4wqSyewT7E3Fzg6DHfInjIQ5qnmxnURAV1W6jzXZ+ujazCMcn9f1zLwme68KuINyG8j8lUSZOFJh46w==",
+  "_location": "/hexo-collaps",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "hexo-collaps@0.0.4",
+    "name": "hexo-collaps",
+    "escapedName": "hexo-collaps",
+    "rawSpec": "0.0.4",
+    "saveSpec": null,
+    "fetchSpec": "0.0.4"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hexo-collaps/-/hexo-collaps-0.0.4.tgz",
+  "_shasum": "3fc48172922da5015e7c703b6802ee15dec84451",
+  "_spec": "hexo-collaps@0.0.4",
+  "_where": "/root/xn----otbbajeebbqwjpgn9l.xn--p1ai",
+  "author": {
+    "name": "dimonpanik"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "deprecated": false,
+  "description": "Grab video in Collaps CDN",
+  "keywords": [
+    "hexo",
+    "hexo plugin",
+    "hexo collaps",
+    "movies films"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "hexo-collaps",
+  "version": "0.0.4"
+}
